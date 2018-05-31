@@ -1,6 +1,7 @@
 [package]
 name = "my-library"
 version = "0.1.0"
-authors = ["Anton Holgersson <holgersson31@hotmail.com>"]
+authors = ["Anton Holgersson"]
 
-[dependencies]
+[dependencies.iron]
+version = "*"
