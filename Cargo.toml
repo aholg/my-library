@@ -3,5 +3,11 @@ name = "my-library"
 version = "0.1.0"
 authors = ["Anton Holgersson"]
 
+[dependencies]
+staticfile = "*"
+
 [dependencies.iron]
 version = "*"
+
+[dependencies.mount]
+git = "https://github.com/iron/mount.git"
