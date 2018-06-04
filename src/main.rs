@@ -1,9 +1,11 @@
-use std::io;
+extern crate iron;
+
+use iron::Request;
+use iron::prelude::*;
+use iron::status;
 
 fn main() {
-    let mut buffer = String::new();
-
-    io::stdin().read_line(&mut buffer).ok().expect("Ahhh");
-
-    println!("{}", buffer);
+    Iron::new(|_: &mut Request| {
+        Ok(Response::with((status::Ok, "Hello World!")))
+    }).http("localhost:3000").unwrap();
 }
