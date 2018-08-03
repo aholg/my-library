@@ -5,6 +5,8 @@ authors = ["Anton Holgersson"]
 
 [dependencies]
 staticfile = "*"
+handlebars-iron = "*"
+router = "*"
 
 [dependencies.iron]
 version = "*"
