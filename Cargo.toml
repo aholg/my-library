@@ -7,6 +7,8 @@ authors = ["Anton Holgersson"]
 staticfile = "*"
 handlebars-iron = "*"
 router = "*"
+serde = "*"
+serde_derive = "*"
 
 [dependencies.iron]
 version = "*"
